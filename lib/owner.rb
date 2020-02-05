@@ -12,7 +12,23 @@ class Owner
     "I am a #{self.species}."
   end
   
-  def all
+  def self.all
     @@all
+  end
+  
+  def self.count
+    @@all.count
+  end
+  
+  def self.reset_all
+    @@all = []
+  end
+  
+  def cats
+    Cat.all.select {|cat| cat.owner == self}
+  end
+  
+  def dogs
+    Dog.all.select {|cat| cat.owner == self}
   end
 end
