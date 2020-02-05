@@ -49,10 +49,13 @@ class Owner
   end
   
   def sell_pets
-    
+    dogs.map {|dog| dog.mood = 'nervous'}
+    dogs.map {|dog| dog.owner = nil}
+    cats.map {|cat| cat.mood = 'nervous'}
+    cats.map {|cat| cat.owner = nil}
   end
   
   def list_pets
-    
+    "I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
   end
 end
