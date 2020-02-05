@@ -41,10 +41,18 @@ class Owner
   end
   
   def walk_dogs
-    
+    dogs.map {|dog| dog.mood = 'happy'}
   end
   
   def feed_cats
+    cats.map {|cat| cat.mood = 'happy'}
+  end
+  
+  def sell_pets
+    
+  end
+  
+  def list_pets
     
   end
 end
