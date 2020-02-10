@@ -1,6 +1,8 @@
+require "pry"
+
 class Cat
   # code goes here
-  attr_accessor :nervous 
+  attr_accessor :mood
   
   
   @@all = []
@@ -10,7 +12,7 @@ class Cat
         @name = name
  
         @owner = owner
-        @nervous = "nervous"
+        @mood = "nervous"
         @@all << self
   end
   
@@ -29,7 +31,7 @@ class Cat
   def owner
     
     @owner
-    
+  #binding.pry  
   end
   
   def owner=(owner)
@@ -41,12 +43,12 @@ class Cat
   
   def mood
     
-   @nervous
+   @mood
   end
   
    def mood=(nervous)
     
-   @nervous="playful"
+   @mood="playful"
   end
   
   def self.all
