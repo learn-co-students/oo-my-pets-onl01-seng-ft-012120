@@ -46,10 +46,10 @@ class Cat
    @mood
   end
   
-   def mood=(nervous)
+   #def mood=(nervous)
     
-   @mood="playful"
-  end
+  # @mood="playful"
+ # end
   
   def self.all
     @@all
